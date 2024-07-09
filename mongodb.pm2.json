@@ -1,0 +1,22 @@
+{
+  "apps": [
+    {
+      "name": "mongod1",
+      "script": "mongod",
+      "args": "--config /etc/mongod.conf --replSet rsProject01",
+      "log": "/var/log/mongodb/mongod.log"
+    },
+    {
+      "name": "mongod2",
+      "script": "mongod",
+      "args": "--config /etc/mongod_rs1.conf --replSet rsProject01",
+      "log": "/var/log/mongodb/mongod_rs1.log"
+    },
+    {
+      "name": "mongod3",
+      "script": "mongod",
+      "args": "--config /etc/mongod_rs2.conf --replSet rsProject01",
+      "log": "/var/log/mongodb/mongod_rs2.log"
+    }
+  ]
+}

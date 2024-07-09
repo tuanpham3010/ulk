@@ -1,0 +1,32 @@
+{
+	"root": true,
+	"extends": ["prettier", "eslint:recommended"],
+	"parser": "@babel/eslint-parser",
+	"parserOptions": {
+		"ecmaVersion": 6,
+		"ecmaFeatures": {
+			"experimentalObjectRestSpread": true,
+			"arrowFunctions": true,
+			"spread": true,
+			"destructuring": true,
+			"templateStrings": true
+		},
+		"requireConfigFile": false
+	},
+	"env": {
+		"node": true,
+		"es6": true
+	},
+	"overrides": [
+		{
+			"files": ["*.js"],
+			"rules": {}
+		}
+	],
+	"rules": {
+		"no-console": 2,
+		"arrow-body-style": ["error", "always"],
+		"semi": ["error", "always"],
+		"no-var": "error"
+	}
+}
